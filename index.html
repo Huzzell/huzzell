@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fitur Keranjang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Barang</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="bg-gray-700 p-3 w-full flex justify-between text-white">
+      <div>
+        <a href="#">Home</a>
+      </div>
+      <div>
+        <input type="text" placeholder="Cari barang anda" class="searchbar px-4 pt-1 text-sky-500 w-96 rounded-lg">
+      </div>
+      <div>
+        <a href="#" class="tampil-keranjang"><img src="keranjang.png" width="100" id="cart-logo"> <span class="cart_count">0</span> Keranjang</a>
+         
+        </a>
+      </div>
+    </nav>
+
+    <!--isi konten-->
+    <div class="grid grid-cols-3 gap-10 m-5 div-produk"></div>
+    
+    <!--modal-->
+    <div class="absolute inset-0 flex justify-center items-center modal hidden">
+        <div class="bg-gray-500 p-5 w-full m-32 rounded text-white">
+
+            <div class="flex justify-between items-center">
+              <div class="font-blod text-xl">Keranjang Anda</div>
+              <div class="font-blod text-xl hover:cursor-pointer btn-tutup">TUTUP</div>
+            </div>
+      
+            <div class="keranjang-anda grid grid-cols-4 text-black gap-5">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
